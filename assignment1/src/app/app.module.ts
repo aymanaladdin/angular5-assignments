@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import {FormsModule} from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 //for type script to recognize these vars
@@ -15,7 +16,8 @@ import { TwoWayDataComponent } from './two-way-data/two-way-data.component';
     TwoWayDataComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
