@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { WarningAlertComponent} from './warning-alert/warning-alert.component';
 import { TwoWayDataComponent } from './two-way-data/two-way-data.component';
+import { ToggleDataComponent } from './toggle-data/toggle-data.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SuccessAlertComponent,
     WarningAlertComponent,
-    TwoWayDataComponent
+    TwoWayDataComponent,
+    ToggleDataComponent
   ],
   imports: [
     BrowserModule,

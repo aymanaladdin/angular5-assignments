@@ -1,0 +1,14 @@
+<div class="col-9">
+    <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Toggle Details</h4>
+          <p class="card-text" *ngIf="collapsed">If you see me then every thing is working really fine.</p>
+          <button class="btn btn-link" (click)="onToggleBtn()">{{(!collapsed)? "more.." : "less.."}}</button>
+        </div>
+      </div>
+ </div>
+ <div class="col-9 my-2">
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let click of clicks" [ngClass]="{' list-group-item-primary': click >= 5, 'list-group-item-warning': click >= 8}">{{"Click number " + click}}</li>
+      </ul>
+ </div>
