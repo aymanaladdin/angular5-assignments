@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-10 mb-3">
+    <h4 class="mb-2">Active Users</h4>
+    <ul class="list-group">
+      <li class="list-group-item d-flex justify-content-between align-items-center mb-1"
+      *ngFor="let user of users; let id = index">
+        {{user.name}}
+        <span>
+          <button class="btn btn-outline-danger btn-sm" (click)="deactiveUser(id)">
+            Inactive
+          </button>
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>

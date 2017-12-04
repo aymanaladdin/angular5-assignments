@@ -1,12 +1,29 @@
-<div class="container">
-  <div class="row">
+<div class="container-fluid mx-5">
+  <div class="row mt-3">
     <h2 class="col-12 my-3">
-      Assignment 3
+      Assignment 5
     </h2>
   </div>
 
+ <!-- assignment 5 -->
+  <app-active-users></app-active-users>
+  <app-inactive-users></app-inactive-users>
+
+
+  <!-- assigment 4  -->
+  <!-- <div class="container">
+    <app-game-control class="row" (counterEmitted)="displayCounter($event)" (clearCounters)="clrearCounterList()"></app-game-control> 
+    <div class="row">
+      <div class="col-2 m-2" *ngFor="let counter of counters">
+        <app-odd-number *ngIf="counter % 2 !== 0" [counter]="counter"></app-odd-number>
+        <app-even-number *ngIf="counter % 2 === 0" [counter]="counter"></app-even-number>        
+      </div>
+    </div>
+  </div> -->
+
   <!-- assignment 3 -->
-  <app-toggle-data class="row"></app-toggle-data>  
+  <!-- <app-toggle-data class="row"></app-toggle-data>   -->
+
   <!-- assignment 2  -->
   <!-- <app-two-way-data class="row"></app-two-way-data> -->
   

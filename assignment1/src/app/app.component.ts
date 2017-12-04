@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,20 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'app';
+  counters :number[]
+
+  constructor(){
+    this.counters = []
+  }
+
+  OnInit(){}
+
+  displayCounter(counter: number){
+    this.counters.push(counter);
+    console.log(this.counters);
+  }
+
+  clrearCounterList(){
+    this.counters = [];
+  }
 }
