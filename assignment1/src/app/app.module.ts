@@ -17,6 +17,7 @@ import { InactiveUsersComponent } from './inactive-users/inactive-users.componen
 //services
 import { UsersService } from './services/users.service';
 import { CounterService } from './services/counter.service';
+import { SimpleFormComponent } from './simple-form/simple-form.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CounterService } from './services/counter.service';
     OddNumberComponent,
     EvenNumberComponent,
     ActiveUsersComponent,
-    InactiveUsersComponent
+    InactiveUsersComponent,
+    SimpleFormComponent
   ],
   imports: [
     BrowserModule,
